@@ -1,0 +1,20 @@
+cd $HOME
+mkdir /C/User/Ethan/pang_xingming-learning-git
+cd pang_xingming-learning-git
+pwd
+touch exercise-1.txt
+ll
+idea exercise-1.txt
+# 'The winter is coming.' is added in exercise-1.txt
+
+git status
+# 'fatal: not a git repository (or any of the parent directories): .git'
+
+git init
+# 'Initialized empty Git repository in C:/Users/Ethan/pang_xingming-learning-git/.git/'
+
+idea exercise-1.txt
+git status
+git add exercise-1.txt
+git status
+git commit -m 'exercise-1.txt'
