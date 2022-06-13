@@ -1,0 +1,59 @@
+cd $HOME
+mkdir /C/User/Ethan/pang_xingming-learning-git
+cd pang_xingming-learning-git
+pwd
+touch exercise-1.txt
+ll
+idea exercise-1.txt
+# 'The winter is coming.' is added in exercise-1.txt
+
+git status
+# 'fatal: not a git repository (or any of the parent directories): .git'
+
+git init
+# 'Initialized empty Git repository in C:/Users/Ethan/pang_xingming-learning-git/.git/'
+
+idea exercise-1.txt
+git status
+git add exercise-1.txt
+git status
+git commit -m 'exercise-1.txt'
+touch exercise-2.txt
+git status
+idea exercise-2.txt
+# 'This is the second file in first practice task.' is added in exercise-2.txt
+
+git status
+git add exercise-2.txt
+git status
+git commit -m 'exercise-2.txt'
+git status
+touch exercise-3.txt
+idea exercise-3.txt
+# 'This should be the last file in first practice' is added in exercise-3.txt
+
+git status
+git add exercise-3.txt
+git status
+git commit -m exercise-3.txt
+git status
+
+idea exercise-3.txt
+# 'Hey I suddenly want to add this sentence.' is added to exercise-3.txt
+git status
+git add exercise-3.txt
+git commit -m exercise-3.txt
+git status
+# At here git diff was forgot
+
+idea exercise-3.txt
+# 'Okay, maybe one more.' is added to exercise-3.txt
+git diff
+git add exercise-3.txt
+git diff
+# At here nothing happen
+gif diff --cached
+# here shows the difference
+
+git commit -m exercise-3.txt
+git status
