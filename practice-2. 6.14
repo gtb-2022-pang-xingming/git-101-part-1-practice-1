@@ -1,0 +1,30 @@
+pwd
+cd /C/Users/Ethan/gtb-git
+touch exercise-2.txt
+git status
+idea exercise-2.txt
+# 1 sentence added
+git add .
+git commit -m 'exercise-2.txt'
+git status
+idea exercie-2.txt
+# a new sentence added
+git diff
+git status
+git checkout exercise-2.txt
+git status
+git diff
+idea exercise-2.txt
+# one more sentence
+git status
+git add exercise-2.txt
+git diff
+# Nothing shown
+git diff --cached
+# Difference shown
+git reset --hard head^
+idea exercise-2.txt
+# last sentence added
+git add .
+git commit -m 'exercise-2.txt'
+git reset --hard head^
